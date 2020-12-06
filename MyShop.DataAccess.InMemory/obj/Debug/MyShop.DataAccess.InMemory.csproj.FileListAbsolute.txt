@@ -1,0 +1,9 @@
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\bin\Debug\MyShop.DataAccess.InMemory.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\bin\Debug\MyShop.DataAccess.InMemory.pdb
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\bin\Debug\MyShop.Core.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\bin\Debug\MyShop.Core.pdb
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\obj\Debug\MyShop.DataAccess.InMemory.csprojAssemblyReference.cache
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\obj\Debug\MyShop.DataAccess.InMemory.csproj.CoreCompileInputs.cache
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\obj\Debug\MyShop.DataAccess.InMemory.csproj.CopyComplete
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\obj\Debug\MyShop.DataAccess.InMemory.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.InMemory\obj\Debug\MyShop.DataAccess.InMemory.pdb

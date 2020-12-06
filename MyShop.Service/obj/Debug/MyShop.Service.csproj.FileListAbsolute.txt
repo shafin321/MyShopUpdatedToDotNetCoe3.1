@@ -1,0 +1,5 @@
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Service\bin\Debug\MyShop.Service.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Service\bin\Debug\MyShop.Service.pdb
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Service\obj\Debug\MyShop.Service.csproj.CoreCompileInputs.cache
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Service\obj\Debug\MyShop.Service.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Service\obj\Debug\MyShop.Service.pdb

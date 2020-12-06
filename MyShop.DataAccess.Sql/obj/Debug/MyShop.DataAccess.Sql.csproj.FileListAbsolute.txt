@@ -1,0 +1,6 @@
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.Sql\bin\Debug\MyShop.DataAccess.Sql.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.Sql\bin\Debug\MyShop.DataAccess.Sql.pdb
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.Sql\obj\Debug\MyShop.DataAccess.Sql.csprojAssemblyReference.cache
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.Sql\obj\Debug\MyShop.DataAccess.Sql.csproj.CoreCompileInputs.cache
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.Sql\obj\Debug\MyShop.DataAccess.Sql.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAccess.Sql\obj\Debug\MyShop.DataAccess.Sql.pdb
