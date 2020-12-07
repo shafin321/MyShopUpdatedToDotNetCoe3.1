@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MyShop.Core.Models
 {
-  public  class Product
+  public  class Product:BaseEntity
     {
-        public string Id { get; set; }
+     //   public string Id { get; set; }
         [DisplayName("Product Name")]
         public string Name { get; set; }
         public string Description { get; set; }             

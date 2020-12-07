@@ -42,7 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contracts\IMemoryCategoryRepo.cs" />
+    <Compile Include="Contracts\IMemoryGenericRepository.cs" />
     <Compile Include="Contracts\IMemoryProductRepo.cs" />
+    <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductCategory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

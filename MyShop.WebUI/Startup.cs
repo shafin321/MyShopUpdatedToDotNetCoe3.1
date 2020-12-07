@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyShop.Core.Contracts;
 using MyShop.DataAccess.InMemory;
+using MyShop.Core.Models;
 
 namespace MyShop.WebUI
 {
@@ -31,6 +32,10 @@ namespace MyShop.WebUI
         {
             services.AddTransient<IMemoryProductRepo, InMemoryProductRepo>();
             services.AddTransient<IMemoryCategoryRepo, InMemoryCategoryRepo>();
+
+            services.AddTransient<IMemoryGenericRepository<Product>, InMemoryGenericRepository<Product>>();
+
+            services.AddTransient<IMemoryGenericRepository<ProductCategory>, InMemoryGenericRepository<ProductCategory>>();
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(

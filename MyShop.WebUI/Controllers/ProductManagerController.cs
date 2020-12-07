@@ -11,11 +11,12 @@ namespace MyShop.WebUI.Controllers
 {
     public class ProductManagerController : Controller
     {
-        private IMemoryProductRepo _productRep;
+        private IMemoryGenericRepository<Product> _productRep; //Generic Repository
+        //private IMemoryProductRepo _productRep;
         private IMemoryCategoryRepo _categoryRepo;
-        public ProductManagerController(IMemoryProductRepo productRepo,  IMemoryCategoryRepo categoryRepo)
+        public ProductManagerController(IMemoryGenericRepository<Product> productRep, IMemoryCategoryRepo categoryRepo)
         {
-            _productRep = productRepo;
+            _productRep = productRep;
             _categoryRepo = categoryRepo;
         }
         public IActionResult Index()
@@ -48,7 +49,7 @@ namespace MyShop.WebUI.Controllers
 
             else
             {
-                _productRep.Insert(product);
+                _productRep.Create(product);
                 _productRep.Commit();
 
                 return RedirectToAction("Index");
@@ -58,7 +59,7 @@ namespace MyShop.WebUI.Controllers
 
         public IActionResult Edit(string id)
         {
-            var product = _productRep.Find(id);
+            var product = _productRep.GetById(id);
             if (product == null)
             {
                 return NotFound();
@@ -78,7 +79,7 @@ namespace MyShop.WebUI.Controllers
         [HttpPost]
         public IActionResult Edit(Product product, string id)
         {
-            var productToEdit = _productRep.Find(id);
+            var productToEdit = _productRep.GetById(id);
 
             if (productToEdit == null)
             {
@@ -103,7 +104,7 @@ namespace MyShop.WebUI.Controllers
 
         public IActionResult Delete(string id)
         {
-            var product = _productRep.Find(id);
+            var product = _productRep.GetById(id);
 
             if (product == null)
             {
@@ -121,7 +122,7 @@ namespace MyShop.WebUI.Controllers
         [ActionName("Delete")]
         public IActionResult ConfirmDelete(string id)
         {
-            var productToDelete = _productRep.Find(id);
+            var productToDelete = _productRep.GetById(id);
             if (productToDelete == null)
             {
                 return NotFound();

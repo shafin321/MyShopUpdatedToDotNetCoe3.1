@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InMemoryCategoryRepo.cs" />
+    <Compile Include="InMemoryGenericRepository.cs" />
     <Compile Include="InMemoryProductRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
