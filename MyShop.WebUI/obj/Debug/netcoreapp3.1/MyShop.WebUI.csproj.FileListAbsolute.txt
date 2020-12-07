@@ -166,3 +166,7 @@ C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.WebUI\obj\Debug\net
 C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.WebUI\obj\Debug\netcoreapp3.1\MyShop.WebUI.genruntimeconfig.cache
 C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\ProductManager\Edit.cshtml.g.cs
 C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\ProductManager\Delete.cshtml.g.cs
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\ProductCategoryManager\Index.cshtml.g.cs
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\ProductCategoryManager\Create.cshtml.g.cs
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\ProductCategoryManager\Edit.cshtml.g.cs
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.WebUI\obj\Debug\netcoreapp3.1\Razor\Views\ProductCategoryManager\Delete.cshtml.g.cs

@@ -30,6 +30,8 @@ namespace MyShop.WebUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IMemoryProductRepo, InMemoryProductRepo>();
+            services.AddTransient<IMemoryCategoryRepo, InMemoryCategoryRepo>();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));

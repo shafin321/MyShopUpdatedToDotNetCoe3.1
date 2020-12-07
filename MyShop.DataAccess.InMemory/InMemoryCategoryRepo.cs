@@ -1,4 +1,5 @@
 ﻿using MyShop.Core.Models;
+using MyShop.Core.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MyShop.DataAccess.InMemory
 {
-    class InMemoryCategoryRepo
+  public  class InMemoryCategoryRepo : IMemoryCategoryRepo
     {
         ObjectCache cache = MemoryCache.Default;
 
@@ -35,11 +36,11 @@ namespace MyShop.DataAccess.InMemory
             productCategories.Add(category);
         }
 
-        public void Update(ProductCategory productCategory )
+        public void Update(ProductCategory productCategory)
         {
             var productToUpdate = productCategories.FirstOrDefault(c => c.Id == productCategory.Id);
-             
-            if(productToUpdate != null)
+
+            if (productToUpdate != null)
             {
                 //updateing product->incoming product->productCategory
                 productToUpdate = productCategory;
@@ -64,7 +65,7 @@ namespace MyShop.DataAccess.InMemory
         public void Delete(string id)
         {
             var productToDelete = productCategories.FirstOrDefault(c => c.Id == id);
-            if(productCategories != null)
+            if (productCategories != null)
             {
                 productCategories.Remove(productToDelete);
             }
@@ -72,7 +73,7 @@ namespace MyShop.DataAccess.InMemory
             {
                 throw new Exception("Not found");
             }
-           
+
         }
     }
 }

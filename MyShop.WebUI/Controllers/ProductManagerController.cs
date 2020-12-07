@@ -5,15 +5,18 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyShop.Core.Contracts;
 using MyShop.Core.Models;
+using MyShop.Core.ViewModel;
 
 namespace MyShop.WebUI.Controllers
 {
     public class ProductManagerController : Controller
     {
         private IMemoryProductRepo _productRep;
-        public ProductManagerController(IMemoryProductRepo productRepo)
+        private IMemoryCategoryRepo _categoryRepo;
+        public ProductManagerController(IMemoryProductRepo productRepo,  IMemoryCategoryRepo categoryRepo)
         {
             _productRep = productRepo;
+            _categoryRepo = categoryRepo;
         }
         public IActionResult Index()
         {
@@ -24,7 +27,15 @@ namespace MyShop.WebUI.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            var model = new Product();
+
+            var viewModel = new ProductCategoryViewModel
+            {
+                Product = model,
+                ProductCategories = _categoryRepo.GetAll()
+
+            };
+            return View(viewModel);
         }
 
         [HttpPost]
@@ -55,7 +66,12 @@ namespace MyShop.WebUI.Controllers
 
             else
             {
-                return View(product);
+                var viewmodel = new ProductCategoryViewModel
+                {
+                    Product = product,
+                    ProductCategories = _categoryRepo.GetAll()
+                };
+                return View(viewmodel);
             }
         }
 
