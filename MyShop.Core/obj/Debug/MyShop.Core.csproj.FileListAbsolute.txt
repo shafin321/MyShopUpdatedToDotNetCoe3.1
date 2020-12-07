@@ -3,3 +3,4 @@ C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Core\bin\Debug\MySh
 C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Core\obj\Debug\MyShop.Core.csproj.CoreCompileInputs.cache
 C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Core\obj\Debug\MyShop.Core.dll
 C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Core\obj\Debug\MyShop.Core.pdb
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.Core\obj\Debug\MyShop.Core.csprojAssemblyReference.cache
