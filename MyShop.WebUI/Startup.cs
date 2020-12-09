@@ -1,20 +1,15 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
-using MyShop.WebUI.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyShop.Core.Contracts;
 using MyShop.DataAccess.InMemory;
 using MyShop.Core.Models;
+using MyShop.DataAcces.Sql.Data;
+using MyShop.DataAcces.Sql;
 
 namespace MyShop.WebUI
 {
@@ -33,9 +28,13 @@ namespace MyShop.WebUI
             services.AddTransient<IMemoryProductRepo, InMemoryProductRepo>();
             services.AddTransient<IMemoryCategoryRepo, InMemoryCategoryRepo>();
 
-            services.AddTransient<IMemoryGenericRepository<Product>, InMemoryGenericRepository<Product>>();
+            //services.AddTransient<IMemoryGenericRepository<Product>, InMemoryGenericRepository<Product>>();
 
-            services.AddTransient<IMemoryGenericRepository<ProductCategory>, InMemoryGenericRepository<ProductCategory>>();
+            //services.AddTransient<IMemoryGenericRepository<ProductCategory>, InMemoryGenericRepository<ProductCategory>>();
+
+            services.AddTransient<IMemoryGenericRepository<Product>, SqlRepository<Product>>();
+            services.AddTransient<IMemoryGenericRepository<ProductCategory>, SqlRepository<ProductCategory>>();
+
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(

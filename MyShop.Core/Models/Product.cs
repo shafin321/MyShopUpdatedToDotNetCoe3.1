@@ -17,9 +17,6 @@ namespace MyShop.Core.Models
         public string Category { get; set; }
         public string Image { get; set; }
 
-        public Product()
-        {
-            this.Id = Guid.NewGuid().ToString();//generating new string id
-        }
+       
     }
 }

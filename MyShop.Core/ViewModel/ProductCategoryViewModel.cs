@@ -1,4 +1,6 @@
-﻿using MyShop.Core.Models;
+﻿
+using Microsoft.AspNetCore.Http;
+using MyShop.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,5 +13,7 @@ namespace MyShop.Core.ViewModel
     {
         public Product Product { get; set; }
         public IEnumerable<ProductCategory> ProductCategories { get; set; }
+       
+
     }
 }

@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Grpc.Core;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MyShop.Core.Contracts;
 using MyShop.Core.Models;
@@ -11,6 +15,7 @@ namespace MyShop.WebUI.Controllers
 {
     public class ProductManagerController : Controller
     {
+       // private readonly IHostingEnvironment hostingEnvironment;
         private IMemoryGenericRepository<Product> _productRep; //Generic Repository
         //private IMemoryProductRepo _productRep;
         private IMemoryCategoryRepo _categoryRepo;
@@ -18,6 +23,8 @@ namespace MyShop.WebUI.Controllers
         {
             _productRep = productRep;
             _categoryRepo = categoryRepo;
+        //    this.hostingEnvironment=hostingEnvironment
+           
         }
         public IActionResult Index()
         {
@@ -32,7 +39,7 @@ namespace MyShop.WebUI.Controllers
 
             var viewModel = new ProductCategoryViewModel
             {
-                Product = model,
+               
                 ProductCategories = _categoryRepo.GetAll()
 
             };
@@ -49,12 +56,14 @@ namespace MyShop.WebUI.Controllers
 
             else
             {
+
+
                 _productRep.Create(product);
+
                 _productRep.Commit();
-
                 return RedirectToAction("Index");
-            }
 
+            }
         }
 
         public IActionResult Edit(string id)

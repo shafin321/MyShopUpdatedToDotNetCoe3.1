@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DDQAq9oBz987AC1FWFM5sARgQCg+JES+ESLvZ8/BmWEHPg4IPYwkZg8/n1zE5jXgyYzW0osteileYZkv3gEBVQ==",
+  "dgSpecHash": "qO2SlZH1/zdsda9UtOs6cAwUnwRz0h26zC6H4aJky7IwqF/BHV0ROarQNVUrk6awLIieIvqpqKWSbaZDXi2avA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Shujaul\\source\\repos\\EcommerceProject\\MyShop\\MyShop.WebUI\\MyShop.WebUI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Shujaul\\.nuget\\packages\\grpc.core\\2.34.0\\grpc.core.2.34.0.nupkg.sha512",
+    "C:\\Users\\Shujaul\\.nuget\\packages\\grpc.core.api\\2.34.0\\grpc.core.api.2.34.0.nupkg.sha512",
     "C:\\Users\\Shujaul\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.4\\microsoft.aspnetcore.cryptography.internal.3.1.4.nupkg.sha512",
     "C:\\Users\\Shujaul\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.4\\microsoft.aspnetcore.cryptography.keyderivation.3.1.4.nupkg.sha512",
     "C:\\Users\\Shujaul\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.4\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.4.nupkg.sha512",

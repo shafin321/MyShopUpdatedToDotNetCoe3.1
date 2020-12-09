@@ -1,0 +1,13 @@
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\bin\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.deps.json
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\bin\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\bin\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.pdb
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\bin\Debug\netcoreapp3.1\MyShop.Core.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\bin\Debug\netcoreapp3.1\MyShop.Core.pdb
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\bin\Debug\netcoreapp3.1\MyShop.Core.dll.config
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\obj\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.csprojAssemblyReference.cache
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\obj\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.AssemblyInfoInputs.cache
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\obj\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.AssemblyInfo.cs
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\obj\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.csproj.CopyComplete
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\obj\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.dll
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\obj\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.pdb
+C:\Users\Shujaul\source\repos\EcommerceProject\MyShop\MyShop.DataAcces.Sql\obj\Debug\netcoreapp3.1\MyShop.DataAcces.Sql.csproj.CoreCompileInputs.cache

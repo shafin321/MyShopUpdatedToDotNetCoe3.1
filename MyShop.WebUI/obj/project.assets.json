@@ -2,6 +2,49 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
+      "Grpc.Core/2.34.0": {
+        "type": "package",
+        "dependencies": {
+          "Grpc.Core.Api": "2.34.0",
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Grpc.Core.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so": {
+            "assetType": "native",
+            "rid": "linux-x64"
+          },
+          "runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib": {
+            "assetType": "native",
+            "rid": "osx-x64"
+          },
+          "runtimes/win-x64/native/grpc_csharp_ext.x64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/grpc_csharp_ext.x86.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Grpc.Core.Api/2.34.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Grpc.Core.Api.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/3.1.4": {
         "type": "package",
         "compile": {
@@ -2655,6 +2698,26 @@
           "bin/placeholder/MyShop.Core.dll": {}
         }
       },
+      "MyShop.DataAcces.Sql/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "3.1.4",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.4",
+          "Microsoft.AspNetCore.Identity.UI": "3.1.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.4",
+          "MyShop.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MyShop.DataAcces.Sql.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyShop.DataAcces.Sql.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "MyShop.DataAccess.InMemory/1.0.0": {
         "type": "project",
         "dependencies": {
@@ -2670,6 +2733,51 @@
     }
   },
   "libraries": {
+    "Grpc.Core/2.34.0": {
+      "sha512": "A8QoX4TkOi9XcNUb70+ogPdGwH/BTSKZr1SoR64tABa+AGOWaVGirXPt8oU0OaPcwBHbKQ76rDJtXrWClE9MHw==",
+      "type": "package",
+      "path": "grpc.core/2.34.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net45/Grpc.Core.targets",
+        "grpc.core.2.34.0.nupkg.sha512",
+        "grpc.core.nuspec",
+        "lib/net45/Grpc.Core.dll",
+        "lib/net45/Grpc.Core.pdb",
+        "lib/net45/Grpc.Core.xml",
+        "lib/netstandard1.5/Grpc.Core.dll",
+        "lib/netstandard1.5/Grpc.Core.pdb",
+        "lib/netstandard1.5/Grpc.Core.xml",
+        "lib/netstandard2.0/Grpc.Core.dll",
+        "lib/netstandard2.0/Grpc.Core.pdb",
+        "lib/netstandard2.0/Grpc.Core.xml",
+        "runtimes/linux-x64/native/libgrpc_csharp_ext.x64.so",
+        "runtimes/osx-x64/native/libgrpc_csharp_ext.x64.dylib",
+        "runtimes/win-x64/native/grpc_csharp_ext.x64.dll",
+        "runtimes/win-x86/native/grpc_csharp_ext.x86.dll"
+      ]
+    },
+    "Grpc.Core.Api/2.34.0": {
+      "sha512": "TfxhML3GDy9Lo7Qk5Nax1ySGXNwxZQ3znVeV2n5SRHZC6EVoRSRy0foPAKrSgmyvrGlCdfsH4E2EmaLvCkNI2w==",
+      "type": "package",
+      "path": "grpc.core.api/2.34.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "grpc.core.api.2.34.0.nupkg.sha512",
+        "grpc.core.api.nuspec",
+        "lib/net45/Grpc.Core.Api.dll",
+        "lib/net45/Grpc.Core.Api.pdb",
+        "lib/net45/Grpc.Core.Api.xml",
+        "lib/netstandard1.5/Grpc.Core.Api.dll",
+        "lib/netstandard1.5/Grpc.Core.Api.pdb",
+        "lib/netstandard1.5/Grpc.Core.Api.xml",
+        "lib/netstandard2.0/Grpc.Core.Api.dll",
+        "lib/netstandard2.0/Grpc.Core.Api.pdb",
+        "lib/netstandard2.0/Grpc.Core.Api.xml"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/3.1.4": {
       "sha512": "P6o80rVMEDv7zQQmIDoeoXHAXfS+bj2iwh5iURfd1EKrojxqVJW3zTYld2nleryT7BBlL7J0aT54tyLZyj8YRg==",
       "type": "package",
@@ -8531,6 +8639,11 @@
       "path": "../MyShop.Core/MyShop.Core.csproj",
       "msbuildProject": "../MyShop.Core/MyShop.Core.csproj"
     },
+    "MyShop.DataAcces.Sql/1.0.0": {
+      "type": "project",
+      "path": "../MyShop.DataAcces.Sql/MyShop.DataAcces.Sql.csproj",
+      "msbuildProject": "../MyShop.DataAcces.Sql/MyShop.DataAcces.Sql.csproj"
+    },
     "MyShop.DataAccess.InMemory/1.0.0": {
       "type": "project",
       "path": "../MyShop.DataAccess.InMemory/MyShop.DataAccess.InMemory.csproj",
@@ -8539,13 +8652,14 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Grpc.Core >= 2.34.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.4",
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.4",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.4",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
       "MyShop.Core >= 1.0.0",
+      "MyShop.DataAcces.Sql >= 1.0.0",
       "MyShop.DataAccess.InMemory >= 1.0.0"
     ]
   },
@@ -8582,6 +8696,9 @@
             "C:\\Users\\Shujaul\\source\\repos\\EcommerceProject\\MyShop\\MyShop.Core\\MyShop.Core.csproj": {
               "projectPath": "C:\\Users\\Shujaul\\source\\repos\\EcommerceProject\\MyShop\\MyShop.Core\\MyShop.Core.csproj"
             },
+            "C:\\Users\\Shujaul\\source\\repos\\EcommerceProject\\MyShop\\MyShop.DataAcces.Sql\\MyShop.DataAcces.Sql.csproj": {
+              "projectPath": "C:\\Users\\Shujaul\\source\\repos\\EcommerceProject\\MyShop\\MyShop.DataAcces.Sql\\MyShop.DataAcces.Sql.csproj"
+            },
             "C:\\Users\\Shujaul\\source\\repos\\EcommerceProject\\MyShop\\MyShop.DataAccess.InMemory\\MyShop.DataAccess.InMemory.csproj": {
               "projectPath": "C:\\Users\\Shujaul\\source\\repos\\EcommerceProject\\MyShop\\MyShop.DataAccess.InMemory\\MyShop.DataAccess.InMemory.csproj"
             }
@@ -8597,11 +8714,11 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
-          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
+          "Grpc.Core": {
             "target": "Package",
-            "version": "[3.1.4, )"
+            "version": "[2.34.0, )"
           },
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
             "target": "Package",
             "version": "[3.1.4, )"
           },
